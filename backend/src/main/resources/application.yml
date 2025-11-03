@@ -1,0 +1,16 @@
+github:
+    api:
+        base-url: https://api.github.com
+        per-page: 100
+        user-agent: GitHub-Org-Snapshot-App
+spring:
+    application:
+        name: backend
+
+rest:
+    template:
+        connect-timeout: 3s
+        read-timeout: 5s
+        max-conn-total: 50
+        max-conn-per-route: 20
+        connection-ttl: 5m

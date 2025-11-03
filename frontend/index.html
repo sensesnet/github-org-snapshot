@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Org Snapshot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>GitHub Org Snapshot</h1>
+
+    <div class="controls">
+        <input type="text" id="orgInput" placeholder="Enter organization (e.g., apple)" value="apple">
+        <select id="sortSelect">
+            <option value="stars">Stars</option>
+            <option value="updated">Updated</option>
+        </select>
+        <input type="number" id="limitInput" min="1" max="20" value="5">
+        <button id="loadButton">Load</button>
+    </div>
+
+    <div id="loading" class="loading">Loading...</div>
+    <div id="error" class="error"></div>
+    <div id="repoList" class="repo-list"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
